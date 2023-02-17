@@ -913,3 +913,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.bookContentJpg {
+    max-height:80vh;
+    max-width:90vw;
+    aspect-ratio: 210 / 297;
+}
