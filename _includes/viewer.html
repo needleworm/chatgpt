@@ -77,7 +77,11 @@
             이전 버튼 눌러도 아무런 반응 없게 하기 위해 
             currentIdx !==0일때만 moveSlide 함수 불러옴 */
 
-            if (currentIdx !== 0) moveSlide(currentIdx - 1);
+            if (currentIdx !== 0) {
+              moveSlide(currentIdx - 1) 
+            } else {
+              moveSlide(slideCount -1)
+            }
         });
 
         next.addEventListener('click', function () {
@@ -87,6 +91,8 @@
             moveSlide 함수 불러옴 */
             if (currentIdx !== slideCount - 1) {
             moveSlide(currentIdx + 1);
+            } else {
+              moveSlide(0)
             }
         });
       </script>
